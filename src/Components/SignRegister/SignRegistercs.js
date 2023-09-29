@@ -29,14 +29,7 @@ export const SignUpContainer = styled.div`
   width: 50%;
   opacity: 0;
   z-index: 1;
-  ${props =>
-    props.signingIn !== true
-      ? `
-  transform: translateX(100%);
-	opacity: 1;
-	z-index: 5;
-	`
-      : null}
+  ${props =>props.signingIn !== true? `transform: translateX(100%);	opacity: 1;z-index: 5;`: null}
 `;
 
 export const SignInContainer = styled.div`
