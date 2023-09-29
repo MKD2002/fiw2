@@ -22,7 +22,7 @@ const {
   phoneNo,
   technologiesKnown
 }=userData;
-const res=await fetch("https://fixitwizards-default-rtdb.firebaseio.com/userbase.json",
+const res=await fetch(`https://fixitwizards-default-rtdb.firebaseio.com/${userData.name}.json`,
 {
 method : "POST",
 headers : {
